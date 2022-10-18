@@ -104,7 +104,7 @@ next.onclick = function() {
     } else {
         currentImg++;
     }
-    homeSection.style.backgroundImage = `url(../images/landing-img${currentImg}.jpg)`;
+    homeSection.style.backgroundImage = `url(./images/landing-img${currentImg}.jpg)`;
     changeActiveClass();
 }
 
@@ -114,7 +114,7 @@ prev.onclick = function() {
     } else {
         currentImg--;
     }
-    homeSection.style.backgroundImage = `url(../images/landing-img${currentImg}.jpg)`;
+    homeSection.style.backgroundImage = `url(./images/landing-img${currentImg}.jpg)`;
     changeActiveClass();
 }
 
@@ -132,7 +132,7 @@ bgBullets.forEach(li => {
         bgBullets.forEach(li => li.classList.remove("active"));
         e.currentTarget.classList.add("active");
         currentImg = e.currentTarget.dataset.img;
-        homeSection.style.backgroundImage = `url(../images/landing-img${currentImg}.jpg)`;
+        homeSection.style.backgroundImage = `url(./images/landing-img${currentImg}.jpg)`;
     })
 })
 
